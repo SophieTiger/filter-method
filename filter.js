@@ -21,6 +21,16 @@ const people = [
   },
 ];
 
+const oldEnough = people.filter(person => person.age >= 21);
+console.log(oldEnough);
+
+const paul = people.filter(p => p.name === 'Paul');
+console.log(paul);
+
+//To get the first and only element in the resulting array
+const pauls = people.filter(p => p.name === 'Paul')[0];
+console.log(pauls);
+
 
 // Complex Filtering
 const students = [
